@@ -6,18 +6,18 @@ https://github.com/highcharts/node-export-server
 
 If you want to skip the build phase and get a container running there is an automatic build setup on dockerhub. Any commits to this repo will automatically build a new container here:
 
-https://hub.docker.com/r/onsdigital/highcharts-export-node/
+https://hub.docker.com/r/brandnewbox/highcharts-export-node/
 
 ## Build
 
 ```
-docker build -t onsdigital/highcharts-export-node . 
+docker build -t brandnewbox/highcharts-export-node . 
 ```
 
 ## Run
 
 ```
-docker run -d --name highcharts -p 8889:8080 onsdigital/highcharts-export-node
+docker run -d --name highcharts -p 8889:8080 brandnewbox/highcharts-export-node
 ```
 The above command will expose the service on port 8889. This can be changed if required.
 

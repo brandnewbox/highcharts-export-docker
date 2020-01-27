@@ -1,4 +1,4 @@
-from node:7.7.2
+FROM node:7.7.2
 
 ENV ACCEPT_HIGHCHARTS_LICENSE="YES"
 RUN npm install highcharts-export-server -g 
