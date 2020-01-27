@@ -1,7 +1,8 @@
-FROM node:13.7.0-alpine3.11
+FROM node:13.7.0
 
 ENV ACCEPT_HIGHCHARTS_LICENSE="YES"
-RUN npm install highcharts-export-server -g 
+RUN npm config set user 0 && \
+    npm install highcharts-export-server -g 
 
 WORKDIR /usr/share/fonts/truetype
 ADD fonts/OpenSans-Regular.ttf OpenSans-Regular.ttf
